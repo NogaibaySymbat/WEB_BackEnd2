@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  color: #111;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+/* buttons */
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #d9d9d9;
+  font-weight: 600;
+}
+button:hover { filter: brightness(0.97); }
+button:active { transform: translateY(1px); }
+
+.status {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* cards */
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  margin-top: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+/* strings */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.row b {
+  font-size: 16px;
+}
+
+.row span {
+  font-size: 18px;
+  text-align: right;
+}
+
+/* images */
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.flag {
+  width: 90px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,.12);
+}
+
+/* news */
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.newsCard {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+
+.newsCard h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.newsImg {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.newsCard p {
+  margin: 8px 0 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+a {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+a:hover { text-decoration: underline; }
+
+
+@media (max-width: 600px) {
+  h1 { font-size: 34px; }
+  .card h2 { font-size: 26px; }
+  .row span { font-size: 16px; }
+}
