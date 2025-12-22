@@ -6,7 +6,7 @@ import path from "path";
 dotenv.config();
 
 const app = express();
-const PORT = 3009;
+const PORT = 3011;
 
 app.use(express.static(path.resolve("public")));
 
